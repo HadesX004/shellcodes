@@ -20,7 +20,7 @@ _start:
    mov al, 59
    syscall
 
-Compiling: nasm shellcode.asm -o shellcode.o
+Compiling: nasm -f elf64 shellcode.asm
 Linking: ld shellcode.o -o shellcode
 
 
